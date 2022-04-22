@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<htm>
+<head>
+    <meta name="viewport" content="with=decvice-width", "initial-scale=1.0"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">-->
+    <title>Celebration using HTM & CSS</title>
+</head>
+<body>
+    <section class="sub-header ">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="event categories.html">EVENT CATEGORIES</a></li>
+                    <li><a href="our works.html">OUR WORKS</a></li>
+                    <li><a href="contact.html">CONTAT US</a></li>
+                </ul>
+            </div>    
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Event Categories</h1>
+    </section>
+     
+    <!--event categories content-->
+    <section class="event_categories">
+        <h1>Events We Help You to Plan</h1>
+        <p>We help you to plan for wedding, birthday celebration, get together, special occasion & office parties etc. </p>
+        
+        <div class = "row">
+        <div class="event-col">
+            <h3>Wedding</h3>
+            <p>The event that is celebrated by almost all the families in Bangladesh is wedding. To celebrate a wedding effciently, it is important to plan it nicely.</p>
+        </div>
+
+        <div class="event-col">
+            <h3>Birth Day</h3>
+            <p>It is an important event to many people. New paernts always want to celebrate it with a lot of enthusiasm. They want everything perfect for their baby.</p>
+        </div>
+
+        <div class="event-col">
+            <h3>Get Together</h3>
+            <p>It is important for us to make any get together enjoyable, so that the family members can partcipate in nice activities together.</p>
+        </div>
+        </div>
+        <div class = "row2">
+            <div class="event-col2">
+                <h3>Special Occassions</h3>
+                <p>We help you to celebrate your special occassions like promotions & achievements.</p>
+            </div>
+    
+            <div class="event-col2">
+                <h3>Office Parties</h3>
+                <p>We will help you to organize and plan your office parties.</p>
+            </div>
+        </div>
+     </section>
+     
+     <!--Services-->
+     <section class="services">
+        <h1>All of Our Services</h1>
+        <p>We provide services to hire event planners and vendors.</p>
+
+        <div class="row">
+            <div class="service-col">
+                 <img src="images/EventManagementCompany.jpg">
+                 <div class="layer">
+                     <h3>Event Management Company</h3>
+                 </div>
+            </div>
+            <div class="service-col">
+               <img src="images/EventPlanner.jpg">
+               <div class="layer">
+                    <h3>Event Planner</h3>
+               </div>
+            </div>
+            <div class="service-col">
+                <img src="images/Products.jpg">
+                <div class="layer">
+                    <h3>Products</h3>
+                </div>
+            </div>
+        </div>       
+    </section>
+    
+
+
+    <!--Footer-->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>We are an event management company located in Bangladesh. <br> Basically, we work as a hub for other event management companies, planners and vendors.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>This project is developed by <i class="fa fa-heart"></i> Sumaiya Tarannum Noor</p>
+    </section>    
+
+
+
+    <!------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

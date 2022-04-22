@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<htm>
+<head>
+    <meta name="viewport" content="with=decvice-width", "initial-scale=1.0"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">-->
+    <title>Celebration using HTM & CSS</title>
+</head>
+<body>
+    <section class="sub-header ">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>  
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="event categories.html">EVENT CATEGORIES</a></li>
+                    <li><a href="our works.html">OUR WORKS</a></li>
+                    <li><a href="contact.html">CONTAT US</a></li>
+                </ul>
+            </div>    
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Works</h1>
+        <p>Our aim is to maximize your enjoyment and comfort for any event. So far, we have helped to plan for a number of weddings, birthdays, office parties, get-togethers etc.</p>
+        <p>We want to make your day as perfect as possible, so it becomes memorable in our beautiful life.</p>
+    </section>
+     
+    <!--Our Works content-->
+    <section class="works-content">
+        <div class="row">
+            <ol>
+            <li>    
+            <div class="work-left">
+                <img src="images/rings.jpeg">
+                <h2>Weddings</h2>
+                <p>We hope to plan a beautiful wedding for you.</p>
+            </div>
+            </li>
+            <li>
+            <div class="work-left">
+                <img src="images/kids.jpg">
+                <h2>Birthdays</h2>
+                <p>We want everyone to enjoy the birthday party.</p>
+            </div>
+            </li>
+            <li>
+            <div class="work-left">
+                <img src="images/party.jpg">
+                <h2>Praties</h2>
+                <p>A good party environment can change the mood.</p>
+            </div>
+            </li>
+            <li>
+            <div class="work-left">
+                <img src="images/others.jpg">
+                <h2>Others</h2>
+                <p>We work for all type of occassions that are worth celebrating.</p>
+            </div>
+            </li>
+            </ol>
+            <ol>
+            <li>    
+            <div class="work-right">
+                <h3>Event Counts</h3>
+                <div>
+                    <span>Weddings: </span>
+                    <span>10</span>
+                </div>
+                <div>
+                    <span>Birthdays: </span>
+                    <span>5</span>
+                </div>
+                <div>
+                    <span>Office Party: </span>
+                    <span>8</span>
+                </div>
+                <div>
+                    <span>Get Together: </span>
+                    <span>10</span>
+                </div>
+            </div>
+            </li>
+            <li>
+            <div class="message-box">
+                <h3>Leave a Message for us: </h3>
+                <form class="message-form">
+                  <input type="text" placeholder="Enter your Name">
+                  <input type="email" placeholder="Enter your email">
+                  <textarea name="" id="" cols="30" rows="5" placeholder="Your Message"></textarea>
+                  <select id="location" name="location">
+                    <option value="dhaka">Dhaka</option>
+                    <option value="chittagong">Chittagong</option>
+                    <option value="sylhet">Sylhet</option>
+                  </select>
+                  <button type="submit" class="hero-btn">Submit</button>
+                </form>
+            </div>
+            </li>
+        </ol>
+        </div>
+    </section>
+   
+
+
+    <!--Footer-->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>We are an event management company located in Bangladesh. <br> Basically, we work as a hub for other event management companies, planners and vendors.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>This project is developed by <i class="fa fa-heart"></i> Sumaiya Tarannum Noor</p>
+    </section>    
+
+
+
+    <!------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
