@@ -5,7 +5,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'info@sumaiyatarannumnoor.github.io';
+$email_from = 'info@sumaiyatarannumnoor.github.io/Sumaiya--Celebration/';
 
 $email_subject = 'One new message.';
 
